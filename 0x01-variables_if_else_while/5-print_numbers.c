@@ -13,5 +13,6 @@ while (i <= 9)
 printf("%d", i);
 i++;
 }
+putchar('\n');
 return (0);
 }

@@ -18,5 +18,6 @@ putchar (lower);
 }
 lower++;
 }
+putchar('\n');
 return (0);
 }

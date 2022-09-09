@@ -14,8 +14,8 @@ if (j != '9')
 {
 putchar(',');
 }
-putchar(' ');
 j++;
 }
+putchar('\n');
 return (0);
 }

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+77;30601;0c#include <stdlib.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -18,6 +18,6 @@ while (i <= 'f')
 putchar(i);
 i++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
