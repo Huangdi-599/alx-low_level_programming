@@ -8,8 +8,9 @@
  */
 int main(void)
 {
-long long n = 612852475143;
-int i, max = -1;
+long n = 612852475143;
+int i;
+long max = -1;
 while (n % 2 == 0)
 {
 max = 2;
