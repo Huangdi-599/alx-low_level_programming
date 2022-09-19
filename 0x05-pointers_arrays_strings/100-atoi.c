@@ -8,12 +8,9 @@
 int _atoi(char *s)
 {
 int i;
-int var;
-var = 0;
-int var2;
-var2 = -1;
-int var3;
-var3 = 0;
+int var = 0;
+int var2 = -1;
+int var3 = 0;
 for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == '-')
