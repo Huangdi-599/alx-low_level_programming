@@ -1,4 +1,6 @@
 #include "main.h"
+int len(char *s);
+int palindrome(char str[], int st, int end);
 /**
  * is_palindrome - Entry Point
  * @s: input
@@ -8,7 +10,7 @@ int is_palindrome(char *s)
 {
 	int len;
 
-	len = lengthc(s);
+	len = len(s);
 
 	if (len == 0)
 		return (1);
@@ -16,14 +18,14 @@ int is_palindrome(char *s)
 }
 
 /**
- * lengthc - finds the length count
+ * len - finds the length count
  * @s: input
  * Return: length size
  */
-int lengthc(char *s)
+int len(char *s)
 {
 	if (*s != '\0')
-		return (1 + lengthc(s + 1));
+		return (1 + len(s + 1));
 	return (0);
 }
 
