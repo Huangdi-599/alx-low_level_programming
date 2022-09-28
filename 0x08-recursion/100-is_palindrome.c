@@ -8,13 +8,13 @@ int palindrome(char str[], int st, int end);
  */
 int is_palindrome(char *s)
 {
-	int len;
+	int length;
 
-	len = len(s);
+	length = len(s);
 
-	if (len == 0)
+	if (length == 0)
 		return (1);
-	return (palindrome(s, 0, len - 1));
+	return (palindrome(s, 0, length - 1));
 }
 
 /**
