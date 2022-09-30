@@ -2,22 +2,23 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - Entry Point
+ * main -  a program that adds positive numbers
  * @argc: arguments
  * @argv: array pointing to arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-int i, add = 0;
-if (argc < 1)
-return (0);
+int i, j, add = 0;
 for (i = 1; i < argc; i++)
 {
-if (!atoi(argv[i]))
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-printf("%s\n", "Error");
+if (argv[i][j] < '0' || argv[i][j] > '9')
+{
+printf("Error\n");
 return (1);
+}
 }
 add += atoi(argv[i]);
 }
