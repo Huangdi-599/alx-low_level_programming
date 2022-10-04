@@ -25,7 +25,7 @@ return (NULL);
 for (i = 0; i < height; i++)
 {
 iarray[i] = (int *)malloc(sizeof(int) * width);
-if (iarray == NULL)
+if (iarray[i] == NULL)
 {
 for (i--; i >= 0; i--)
 {
