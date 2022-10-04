@@ -27,6 +27,10 @@ for (i = 0; i < height; i++)
 iarray[i] = (int *)malloc(sizeof(int) * width);
 if (iarray == NULL)
 {
+for (i--; i >= 0; i--)
+{
+free(array[i]);
+}
 free(iarray);
 return (NULL);
 }
