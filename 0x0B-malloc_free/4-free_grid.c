@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * free_grid -  a function that frees a 2 dimensional grid previously
