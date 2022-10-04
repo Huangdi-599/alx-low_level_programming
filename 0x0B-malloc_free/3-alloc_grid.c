@@ -16,7 +16,7 @@ int **iarray;
 int i, j;
 if (width <= 0 || height <= 0)
 return (NULL);
-iarray = malloc(sizeof(int) * height);
+iarray = (int **)malloc(sizeof(int *) * height);
 if (iarray == NULL)
 {
 free(iarray);
@@ -24,7 +24,7 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 {
-iarray[i] = malloc(sizeof(int) * width);
+iarray[i] = (int *)malloc(sizeof(int) * width);
 if (iarray == NULL)
 {
 free(iarray);
