@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -9,7 +10,6 @@
  * Return: The function should return NULL on failure
  * If width or height is 0 or negative, return NULL
  */
-
 int **alloc_grid(int width, int height)
 {
 int **iarray;
