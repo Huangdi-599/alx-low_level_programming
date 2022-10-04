@@ -26,6 +26,6 @@ for (j = 0; j < i; j++)
 {
 duplicate[j] = str[j];
 }
-duplicate[len] = '\0'
+duplicate[len] = '\0';
 return (duplicate);
 }
