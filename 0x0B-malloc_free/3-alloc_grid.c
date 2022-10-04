@@ -29,7 +29,7 @@ if (iarray == NULL)
 {
 for (i--; i >= 0; i--)
 {
-free(array[i]);
+free(iarray[i]);
 }
 free(iarray);
 return (NULL);
