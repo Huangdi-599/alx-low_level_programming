@@ -34,7 +34,7 @@ if (concat == NULL)
 return (NULL);
 for (loop1 = 0; loop1 < i; loop1++)
 	concat[loop1] = s1[loop1];
-for (loop2 = 0; loop2 < j; loop2++)
+for (loop2 = 0; loop2 < j && loop2 < n; loop2++)
 {
 concat[loop1] = s2[loop2];
 loop1++;
