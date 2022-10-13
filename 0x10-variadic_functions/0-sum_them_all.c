@@ -22,5 +22,5 @@ for (i = 0; i < n; i++)
 sum += va_arg(args, const unsigned int);
 }
 va_end(args);
-return (x);
+return (sum);
 }
