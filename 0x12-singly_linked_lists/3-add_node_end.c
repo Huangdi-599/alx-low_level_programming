@@ -35,11 +35,11 @@ if (*head == NULL)
 else
 {
 tail = *head;
-for (j = 0; tail->next != NULL; j++)
+while (tail->next != NULL)
 {
 tail = tail->next;
 }
 tail->next = new;
 }
-return (*head);
+return (new);
 }
