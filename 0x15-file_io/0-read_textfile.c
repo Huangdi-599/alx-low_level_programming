@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
  * read_textfile - Reads a text file and prints it to POSIX stdout.
  * @filename: A pointer to the name of the file.
@@ -28,13 +26,13 @@ if (buf == NULL)
 {
 return (0);
 }
-red = read(file, buf, letters);
+red = read(opened, buf, letters);
 if (red == -1)
 {
 return (0);
 }
 buf[letters] = '\0';
-wrote = write(1, buf, rd);
+wrote = write(STDOUT_FILENO, buf, red);
 if (wrote == -1)
 {
 return (0);
